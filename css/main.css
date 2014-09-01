@@ -1,0 +1,116 @@
+html, body {
+	width: 100%;
+	height:100%;
+}
+
+body {
+	background-color: #5D8CAE;
+	color: #F5F7FA;
+	font-family: 'Marvel', 'Arial', sans-serif;
+	font-size: 14pt;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Marvel', 'Arial', sans-serif;
+	color: #F5F7FA;
+	font-size: 400%;
+}
+
+.skrollr-desktop body {
+	height:100% !important;
+}
+
+
+.title {
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.parallax-image-wrapper {
+	position:fixed;
+	left:0;
+	width:100%;
+	overflow:hidden;
+}
+
+.parallax-image-wrapper-50 {
+	height:50%;
+	top:-50%;
+}
+
+.parallax-image-wrapper-100 {
+	height:100%;
+	top:-100%;
+}
+
+.parallax-image {
+	display:none;
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+}
+
+.parallax-image-50 {
+	height:200%;
+	top:-50%;
+}
+
+.parallax-image-100 {
+	height:100%;
+	top:0;
+}
+
+.parallax-image.skrollable-between {
+	display:block;
+}
+
+.no-skrollr .parallax-image-wrapper {
+	display:none !important;
+}
+
+#skrollr-body {
+	height:100%;
+	overflow:visible;
+	position:relative;
+}
+
+.gap {
+	background:transparent center no-repeat;
+	background-size:cover;
+}
+
+.skrollr .gap {
+	background:transparent !important;
+}
+
+.gap-50 {
+	height:50%;
+}
+
+.gap-100 {
+	height:100%;
+}
+
+.header, .content {
+	padding:1em;
+
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+.content-full {
+	height:100%;
+}
+
+#done {
+	height:100%;
+}
