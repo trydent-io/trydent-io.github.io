@@ -1,33 +1,84 @@
 extends _layouts/default
 
 block content
-	div.parallax-image-wrapper.parallax-image-wrapper-100(data-anchor-target='#dragons + .gap', data-bottom-top='transform:translate3d(0px, 200%, 0px)', data-top-bottom='transform:translate3d(0px, 0%, 0px)')
-		div.parallax-image.parallax-image-100(style='background-image: url(img/trydent_back1.png);', data-anchor-target='#dragons + .gap', data-bottom-top='transform: translate3d(0px, -80%, 0px);', data-top-bottom='transform: translate3d(0px, 80%, 0px);')
-	//div.parallax-image-wrapper.parallax-image-wrapper-100(data-anchor-target='#bacons + .gap', data-bottom-top='transform:translate3d(0px, 200%, 0px)', data-top-bottom='transform:translate3d(0px, 0%, 0px)')
-		div.parallax-image.parallax-image-100(style='background-image: url(img/trydent_back1.png);', data-anchor-target='#bacons + .gap', data-bottom-top='transform: translate3d(0px, -80%, 0px);', data-top-bottom='transform: translate3d(0px, 80%, 0px);')
-	//div.parallax-image-wrapper.parallax-image-wrapper-50(data-anchor-target='#kittens + .gap', data-bottom-top='transform:translate3d(0px, 300%, 0px)', data-top-bottom='transform:translate3d(0px, 0%, 0px)')
-		div.parallax-image.parallax-image-50(style='background-image: url(img/trydent_back1.png);', data-anchor-target='#kittens + .gap', data-bottom-top='transform: translate3d(0px, -60%, 0px);', data-top-bottom='transform: translate3d(0px, 60%, 0px);')
-	div#skrollr-body
-		div#dragons
-		div.gap.gap-100(style='background-image: url(img/trydent_back1.png);')
-			include _includes/header
-			div.title
-				img(alt='', src='img/new_logo_trydent.svg', style='width:256px; height:256px;').animated.rollIn
-				h1.animated.fadeIn
-					include _includes/title
-		//div#bacons.content
-			p
-				| Landjaeger chicken ham fatback sausage hamburger, tri-tip capicola pastrami pancetta ribeye turducken. Rump shank turkey pig kevin sausage meatloaf tenderloin drumstick short ribs short loin. Prosciutto spare ribs chuck, pork strip steak pork chop swine bacon turkey shoulder andouille. Jowl landjaeger chicken corned beef. Ham hock kielbasa pancetta ground round sausage. Spare ribs porchetta pastrami filet mignon drumstick ball tip. Beef ribs prosciutto kevin, landjaeger shoulder ham hock ham brisket sirloin chuck t-bone drumstick kielbasa pork chop.
-			p
-				| Landjaeger spare ribs chicken ball tip, filet mignon frankfurter ribeye tenderloin corned beef. Strip steak boudin pork loin, chicken turkey ball tip beef ribs ground round shank ham hock. Kevin capicola beef, chuck pork chop shoulder brisket doner meatloaf shank ham hock tenderloin. Chuck ham hock short ribs ground round sausage prosciutto shoulder bacon andouille tri-tip beef biltong filet mignon chicken. Pork belly andouille shank, bacon sausage meatloaf bresaola pork chop short ribs t-bone. Ham hock salami porchetta bacon beef turkey, strip steak kielbasa pancetta brisket meatball t-bone.
-			p
-				| Chicken pancetta capicola chuck, turkey meatball jerky frankfurter kielbasa ball tip bacon ground round. Beef ribs brisket meatloaf short ribs landjaeger shankle spare ribs sausage, pancetta swine sirloin flank. Tail shank chuck pancetta, ham meatloaf short ribs sausage rump turkey kevin pork chop landjaeger. Doner boudin short ribs t-bone, jerky shankle bresaola drumstick. Strip steak shank spare ribs boudin doner short ribs. Boudin prosciutto jowl tenderloin tongue beef ribs, short ribs salami short loin strip steak ham jerky. Shank pancetta beef ribs, corned beef ham hock pork belly drumstick tail bresaola chuck.
-		//div.gap.gap-100(style='background-image: url(img/trydent_back1.png);')
-		//div#kittens.content.content-full
-			| Here be kittens
-		//div.gap.gap-50(style='background-image: url(img/trydent_back1.png);')
-		//div#done.content
-			| Images from
-			a(href='http://placekitten.com/attribution.html') http://placekitten.com/
-			| , thanks!
-
+	section#landing
+		img#cloud1(alt='', src='img/landing/big_cloud.png', data-xrange='40', data-yrange='40')
+		img#cloud2(alt='', src='img/landing/small_cloud.png', data-xrange='40', data-yrange='40')
+		img#cloud3(alt='', src='img/landing/big_cloud.png', data-xrange='40', data-yrange='40')
+		img#cloud4(alt='', src='img/landing/small_cloud.png', data-xrange='40', data-yrange='40')
+		img#seagod(alt='', src='img/landing/poseidon_cliff.png', data-xrange='10', data-yrange='10', data-invert='true')
+		img#waves4(alt='', src='img/landing/wave4.png', data-xrange='20', data-yrange='20', data-invert='true')
+		img#waves3(alt='', src='img/landing/wave3.png', data-xrange='10', data-yrange='10')
+		img#waves2(alt='', src='img/landing/wave2.png', data-xrange='20', data-yrange='20', data-invert='true')
+		img#waves1(alt='', src='img/landing/wave1.png', data-xrange='10', data-yrange='10')
+	div.splash-container
+		div.splash
+			img#logo(alt='', src='img/new_logo_trydent.svg', style='width:196px; height:196px; position:asbolute; top: 500px; left: 500px;').animated.rollIn
+			h6.splash-head.animated.fadeIn(style='margin: 0')
+				include _includes/title
+			p.splash-subhead.animated.fadeIn
+				| The fork you need
+	div.content-wrapper
+		div.content
+			h2.content-head.is-center Excepteur sint occaecat cupidatat.
+			div.pure-g
+				div.l-box.pure-u-1.pure-u-md-1-2.pure-u-lg-1-4
+					h3.content-subhead
+						i.icon-rocket
+						| Get Started Quickly
+					p
+						| Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+				div.l-box.pure-u-1.pure-u-md-1-2.pure-u-lg-1-4
+					h3.content-subhead
+						i.icon-mobile
+						| Responsive Layouts
+					p
+						| Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+				div.l-box.pure-u-1.pure-u-md-1-2.pure-u-lg-1-4
+					h3.content-subhead
+						i.icon-lab
+						| Modular
+					p
+						| Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+				div.l-box.pure-u-1.pure-u-md-1-2.pure-u-lg-1-4
+					h3.content-subhead
+						i.icon-checkbox-checked
+						| Plays Nice
+					p
+						| Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+		div.ribbon.l-box-lrg.pure-g
+			div.l-box-lrg.is-center.pure-u-1.pure-u-md-1-2.pure-u-lg-2-5
+				img.pure-img-responsive(alt='File Icons', width='300', src='img/trydent_icon.svg')
+			div.pure-u-1.pure-u-md-1-2.pure-u-lg-3-5
+				h2.content-head.content-head-ribbon Laboris nisi ut aliquip.
+				p
+					| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					| tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					| quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					| consequat. Duis aute irure dolor.
+		div.content
+			h2.content-head.is-center Dolore magna aliqua. Uis aute irure.
+			div.pure-g
+				div.l-box-lrg.pure-u-1.pure-u-md-2-5
+					form.pure-form.pure-form-stacked
+						fieldset
+							label(for='name') Your Name
+							input#name(type='text', placeholder='Your Name')
+							label(for='email') Your Email
+							input#email(type='email', placeholder='Your Email')
+							label(for='password') Your Password
+							input#password(type='password', placeholder='Your Password')
+							button.pure-button(type='submit') Sign Up
+				div.l-box-lrg.pure-u-1.pure-u-md-3-5
+					h4 Contact Us
+					p
+						| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						| tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						| quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						| consequat.
+					h4 More Information
+					p
+						| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						| tempor incididunt ut labore et dolore magna aliqua.
+		div.footer.l-box.is-center
+			| View the source of this layout to learn more. Made with love by the YUI Team.
